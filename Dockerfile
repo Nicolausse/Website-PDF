@@ -22,6 +22,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy backend code
 COPY backend backend
 
-EXPOSE 8000
+# Set permissions for temporary files
+RUN chmod -R 777 /tmp
 
-CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+EXPOSE 7860
+
+CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "7860"]

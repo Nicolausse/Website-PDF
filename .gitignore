@@ -1,0 +1,20 @@
+# Node.js / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+.npm
+
+# Python / Backend
+backend/.venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+backend/tools/
+
+# Temporary storage
+*_temp/
+*.msi
+.DS_Store
+Thumbs.db
